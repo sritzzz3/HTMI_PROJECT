@@ -1,0 +1,179 @@
+ /*google fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,500&display=swap');
+
+ /*resetting websie*/
+ *{
+    margin: 0;/*shift the position or littke distance from top line */
+    padding: 0;/*controls the dimension of the element*/
+    font-family: Nunito sans,sans-serif;
+    box-sizing: border-box; 
+ } 
+
+ :root{  /**root-to declare the variables
+    */
+       --primary-color:#FFC700;
+       --secondary-color:#1f1f1f;
+ }
+
+ nav{
+    height: 10vh; /*10 parts are taken by then nav bar*/
+    background-color: var(--primary-color);
+    display: flex;/*manage the w and H*/
+    justify-content: space-between;
+    align-items: center;
+    /*equal padding divide by 2 on both side*/
+    padding: 0px calc(( 100vw - 1300px) / 2 ); 
+    /*calc-caluations-----top bottom no padding : left right padding*/
+ }
+
+ .logo{
+    color: var(--secondary-color);
+    font-size: 1.5 rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+
+
+  /*target the img*/
+   .logo > img {   /*inside the logo styling the image(koo)*/
+    width: 50px;
+    display: inline;/*to be in same line*/
+}
+
+
+.logo h1{
+    display: inline;
+    font-size: 35px;
+    color: rgb(49, 47, 47);
+
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0 1.5rem;  /*rem-1.5times of current size--depends on parent element*/
+}
+
+.nav-items a:hover{
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.3s;
+}
+
+.hero{
+    background-color: var(--primary-color);
+}
+
+.hero-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr ; /*divide into table like structure--grid*/
+    height: 90 vh; /*90 vh space btw them : other wise not wroking*/
+    padding: 3rem calc((100vw - 1300px) / 2 );
+    
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column; /*flex in y direction*/
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--secondary-color);
+    padding: 0rem 2rem;
+}
+
+
+.column-left h1{
+    margin-bottom: 1rem ; 
+    font-size: 2rem;
+}
+
+.column-left p{
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+}
+
+.column-left button{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    /*border: none;*/
+    border-radius: 50px;
+    color: var(--primary-color);
+    background-color:rgb(59, 59, 59);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.column-left button:hover{
+    background: #000000;
+    transition: ease-in-out 0.3sec;
+    border: 1px solid var(--secondary-color); /*its has some width-push the elements*/
+}
+
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0rem 2rem;
+}
+
+.column-right img{
+    width: 100%;   
+}
+
+/*animations-animate css*/
+
+
+/*resposiveness*/
+@media screen and (max-width:768px){
+    .logo h1{
+        font-size: 30px;
+    }
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-items a{
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+    }
+
+    .column-left h1{
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
