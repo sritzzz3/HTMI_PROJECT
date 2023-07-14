@@ -1,0 +1,150 @@
+/*resetting css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:rgb(209, 201, 209);
+    /*vh= 100% - veiw port height*/
+    height:100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+  
+.container{
+    width:40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    min-height: 100px;
+    min-width:300px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+
+
+   /* task input box */
+#newtask input{
+    width:75%;
+    height: 45px;
+    padding: 12px;
+    color: rgb(0, 0, 0);  /* task entering box text*/
+    caret-color: rgb(67, 18, 243);  /* colur of '|'*/
+    font-weight:lighter;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid rgb(255, 222, 222);
+}
+    /*enter your task-box*/
+#newtask input:focus{
+    outline: none;
+    outline: solid 1px;
+    transition: ease-in-out 0.3s;
+}
+
+#newtask button{
+    position:relative;
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: rgb(253, 227, 250);
+    border: none;
+    border-radius: 8px;
+    color: rgb(40, 43, 42);/*add button color*/
+    cursor: pointer;
+    width: 20%;
+    height: 45px;
+    opacity: 0.9;
+}
+
+#newtask button:hover{
+    opacity: 1.5;
+    outline: 1px ridge ;
+    transition: ease-in-out 0.3s;
+}
+
+
+#task{
+    /* task space -styling*/
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(233, 252, 255);
+    padding: 6px 12px;
+}
+
+
+.task{
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: rgb(226, 252, 255);
+    height: 50px;
+    margin-bottom:10px;
+    padding:5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task span{
+    font-family:"rock salt" , cursive;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+ /*delet button*/
+.task button{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    outline: solid rgb(228, 14, 14) 1.5px;
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+
+}
+
+.task button.hover{
+    background-color: rgb(236, 225, 225);
+    transition: ease-in-out 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
